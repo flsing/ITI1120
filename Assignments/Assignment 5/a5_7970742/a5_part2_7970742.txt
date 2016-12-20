@@ -1,0 +1,62 @@
+Python 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "copyright", "credits" or "license()" for more information.
+>>> ================================ RESTART ================================
+>>> 
+>>> def largest_two(a):
+    '''lst->int
+    Return the sum of the two largest items in the lsit.
+    '''
+
+    largest=sorted(a)[-1]
+    second=sorted(a)[-2]
+    
+    return largest+second
+
+>>> "this function calls sorted and sorts the list twice to find the largest and second largest. so it uses 140,000 operations."
+'this function calls sorted and sorts the list twice to find the largest and second largest. so it uses 140,000 operations.'
+>>> def smallest_half(a):
+    '''lst->int
+    returns the sum on half of the list that contains the smallest numbers
+    '''
+    suml=0
+    newlst=sorted(a)
+    newlst=newlst[:len(a)//2]
+
+    for i in newlst:
+        suml=suml+i
+    return suml
+
+>>> "this function uses sorted so it uses 140,000 operations then it counts them in a linear fashio"
+'this function uses sorted so it uses 140,000 operations then it counts them in a linear fashio'
+>>> def median(a):
+    '''lst->num
+    return median of list
+    '''
+    sorteda = sorted(a)
+    aLen = len(a)
+    index = (aLen - 1) // 2
+
+    if (aLen % 2):
+        return sorteda[index]
+    else:
+        return (sorteda[index] + sorteda[index + 1])/2.0
+
+>>> "this function uses sorted so it uses 140,000 operations"
+'this function uses sorted so it uses 140,000 operations'
+>>> def at_least_third(a):
+    '''lst->int or None
+    returns a value that occurs at least len(a)//3+1 times, if not then returns
+    false
+    '''
+    
+    newlst=sorted(a)//3+1
+    i=0
+    
+    for i in range(len(newlst)):
+        i=i+1
+        return i
+
+>>> "this function uses sorted and loops so it uses over 140,000 operations"
+'this function uses sorted and loops so it uses over 140,000 operations'
+>>> 

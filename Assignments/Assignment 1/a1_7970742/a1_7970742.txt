@@ -1,0 +1,89 @@
+Python 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "copyright", "credits" or "license()" for more information.
+>>> ================================ RESTART ================================
+>>> 
+>>> #test question 1
+>>> 
+>>> f2k(90)
+305.3722222222222
+>>> f2k(-457.87)
+1.0
+>>> 
+>>> #test question 2
+>>> 
+>>> bibformat_apa("George R. R. Martin", "A Game of Thrones", "New York City", "Bantam Spectra", 1996)
+'George R. R. Martin (1996).A Game of Thrones. New York City: Bantam Spectra.'
+>>> 
+>>> #test question 3
+>>> 
+>>> joker()
+What is your name? Felix Singerman
+Why did Felix Singerman cross the playground?
+To get to the other slide
+>>> 
+>>> #test question 4
+>>> 
+>>> bibformat_apa_display()
+What is the title of the book? A Game of Thrones
+Who is the author of the book? George R. R. Martin
+What year was the book published? 1996
+Enter the name of the publisher: Bantam Spectra
+In what city are the headquarters of the publisher? New York City
+'George R. R. Martin (1996).A Game of Thrones. New York City: Bantam Spectra.'
+>>> 
+>>> #test question 5
+>>> 
+>>> bni(195,74)
+Traceback (most recent call last):
+  File "<pyshell#19>", line 1, in <module>
+    bni(195,74)
+NameError: name 'bni' is not defined
+>>> 
+>>> 
+>>> #test question 5
+>>> 
+>>> bmi(195,74)
+25.63915266617969
+>>> bmi(150,74)
+19.722425127830533
+>>> 
+>>> #test question 6
+>>> 
+>>> f2fi(6.5)
+(6, 6.0)
+>>> f2fi(5.25)
+(5, 3.0)
+>>> 
+>>> #test question 7
+>>> 
+>>> bmi_calculator()
+Enter your appelation (Mr., MRs., Dr.,....): Mr.
+Enter your first name: Felix
+Enter your last name: Singerman
+Enter your height in inches: 65
+Enter your weight in pounds: 140
+BMI Record for Mr. Felix Singerman
+Subject is 65 inches tall and weighs 140 pounds
+The subject's BMI is 65140
+>>> 
+>>> #test question 8(not in shell it is the draw_college_court)
+>>> 
+>>> draw_college_court()
+>>> 
+>>> #test question 9
+>>> 
+>>> forms_triangle(20,20,30)
+True
+>>> forms_triangle(2,30,1)
+False
+>>> 
+>>> #test question 10
+>>> 
+>>> change_to_coins(1.15)
+6
+>>> change_to_coins(2.02)
+10
+>>> change_to_coins(0.37)
+4
+>>> 
